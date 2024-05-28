@@ -20,8 +20,13 @@ export default function Layout({ pageTitle, children }) {
                 <div className="flex">
                     {/* <MenuBarMobile setter={setShowSidebar} /> */}
                     <Sidebar show={showSidebar} setter={setShowSidebar} />
-                    <div className="flex flex-col flex-grow w-screen md:w-full max-h-[calc(100vh-64px)] overflow-auto">
-                        {children}
+                    <div className="flex flex-col flex-grow w-screen md:w-full h-[calc(100vh-64px)] overflow-auto">
+                        <div
+                            className={`flex fixed -z-1 opacity-[0.7] w-[100%] h-[100%] bg-newspaper bg-repeat-round`}
+                        />
+                        <div className="bg-[#CDAC8C75]">
+                            {children}
+                        </div>
                     </div>
                 </div>
             </div>
