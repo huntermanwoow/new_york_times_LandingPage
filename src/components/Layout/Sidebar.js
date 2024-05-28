@@ -28,11 +28,8 @@ export default function Sidebar({ show, setter }) {
                 onClick={() => {
                     setter(oldVal => !oldVal);
                 }}
-                className={`flex gap-1 [&>*]:my-auto text-md pl-6 py-3 border-b-[1px] border-b-white/10 ${colorClass}`}
+                className={`flex gap-1 [&>*]:my-auto text-md px-2 py-3 border-b-[1px] border-b-white/10 ${colorClass}`}
             >
-                <div className="text-xl flex [&>*]:mx-auto w-[30px]">
-                    {icon}
-                </div>
                 <div>{name}</div>
             </Link>
         )
@@ -51,27 +48,54 @@ export default function Sidebar({ show, setter }) {
     return (
         <>
             <div className={`${className}${appendClass}`}>
-                <div className="p-2 flex">
-                    <Link href="/">
-                        {/*eslint-disable-next-line*/}
-                        <img src={logo.src} alt="Company Logo" width={300} height={300} />
-                    </Link>
-                </div>
                 <div className="flex flex-col">
                     <MenuItem
-                        name="Home"
+                        name="Menu"
                         route="/"
-                        icon={<SlHome />}
                     />
                     <MenuItem
-                        name="About Us"
-                        route="/about"
-                        icon={<BsInfoSquare />}
+                        name="RealAssetDAO"
+                        route="/RealAssetDAO"
                     />
                     <MenuItem
-                        name="Contact"
-                        route="/contact"
-                        icon={<BsEnvelopeAt />}
+                        name="Reserves"
+                        route="/Reserves"
+                    />
+                    <MenuItem
+                        name="Yield Bearing Schedule"
+                        route="/Yield Bearing Schedule"
+                    />
+                    <MenuItem
+                        name="$1913 Price History"
+                        route="/$1913 Price History"
+                    />
+                    <MenuItem
+                        name="Yield Bearing Schedule"
+                        route="/Yield Bearing Schedule"
+                    />
+                    <MenuItem
+                        name="Twitter"
+                        route="/Twitter"
+                    />
+                    <MenuItem
+                        name="YouTube"
+                        route="/YouTube"
+                    />
+                    <MenuItem
+                        name="TikTok"
+                        route="/TikTok"
+                    />
+                    <MenuItem
+                        name="Geoblocking"
+                        route="/Geoblocking"
+                    />
+                    <MenuItem
+                        name="Learning"
+                        route="/Learning"
+                    />
+                    <MenuItem
+                        name="MMMOG"
+                        route="/MMMOG"
                     />
                 </div>
             </div>
