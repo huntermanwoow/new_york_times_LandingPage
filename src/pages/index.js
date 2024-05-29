@@ -34,7 +34,7 @@ export default function HomePage() {
 						<div className='bg-[#6d543d] w-[2px] h-[553px] ml-2 hidden tall:block'></div>
 						<div className="w-full md:w-[612px] h mt-4 tall:ml-2 tall:mt-0">
 							<div className='w-'>
-								<iframe className="w-full h-[384px] rounded-[20px]" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+								<iframe className="w-full h-[320px] md:h-[384px] rounded-[20px]" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
 							</div>
 							<div className="flex mt-4 justify-between">
 								<PriceCard icon={ChartIcon.src} price={'$31.55'} description={'Guranteed floor price'} />
