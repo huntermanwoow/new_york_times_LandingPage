@@ -24,14 +24,16 @@ export default function HomePage() {
 						<div className="text-[24px] font-[400] font-[Chomsky] text-dark-white">12/24/1913</div>
 					</div>
 					<div className="flex mt-4 flex-wrap justify-center tall:justify-between">
-						<div className="flex flex-grow justify-around tall:justify-between">
-							<Sidebar show={showMenu} setter={setShowMenu}/>
+						<div className="flex flex-grow justify-around tall:justify-between border-b pb-[20px] border-b-[#6d543d] border-b-[2px] tall:border-none">
+							<Sidebar show={showMenu} setter={setShowMenu} />
+							<div className='bg-[#6d543d] md:w-[2px] hidden md:block'></div>
 							<div>
-								<Image className="rounded-[20px] border-[#473728] border-[4.89px]" src={ArticleImage} alt='Article Image'/>
+								<Image className="rounded-[20px] border-[#473728] border-[4.89px]" src={ArticleImage} alt='Article Image' />
 							</div>
 						</div>
-						<div className="w-full md:w-[612px] h mt-4 tall:ml-5 tall:mt-0">
-							<div>
+						<div className='bg-[#6d543d] w-[2px] h-[553px] ml-2 hidden tall:block'></div>
+						<div className="w-full md:w-[612px] h mt-4 tall:ml-2 tall:mt-0">
+							<div className='w-'>
 								<iframe className="w-full h-[384px] rounded-[20px]" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
 							</div>
 							<div className="flex mt-4 justify-between">

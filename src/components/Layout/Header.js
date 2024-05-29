@@ -26,14 +26,14 @@ export default function Header({ setter }) {
                     <span>
                         <Image src={logo} alt="logo" className='w-36px' />
                     </span>
-                    <span className="text-[18px] font-[Outfit] text-dark-white pl-[6px]">1913$</span>
+                    <span className="text-[18px] font-[Outfit] text-dark-white pl-[6px]"><a href="/">1913$</a></span>
                 </div>
                 <div className="rounded-48px flex font-[Outfit] bg-white px-3 py-2 items-center justify-center text-dark-green font-bold w-147px h-35px">
                     <div>
                         <Image src={vectorImage} alt="sub-logo"/>
                     </div>
                     <div className='pl-1'>
-                        Launch App
+                        <a href="https://1913.app/" target="_blank">Launch App</a>
                     </div>
                 </div>
             </div>

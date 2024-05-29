@@ -1,6 +1,5 @@
 // @/components/Layout/Sidebar.js
 import React, { useState, useEffect } from 'react'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 export default function Sidebar({ show, setter }) {
@@ -17,15 +16,16 @@ export default function Sidebar({ show, setter }) {
         const colorClass = router.pathname === route ? "text-dark-white bg-[#524131]" : "text-[#DABC9ECC] hover:text-dark-white hover:bg-[#524131]";
 
         return (
-            <Link
+            <a
                 href={route}
                 onClick={() => {
                     setter(oldVal => !oldVal);
                 }}
                 className={`flex gap-[10px] rounded-[12px] [&>*]:my-auto text-md px-4 py-[7px] font-[Inter] text-[600] text-[22px] text-[#DABC9ECC] hover:text-dark-white hover:bg-[#524131]`}
+                target='_blank'
             >
                 <div>{name}</div>
-            </Link>
+            </a>
         )
     }
 
@@ -45,7 +45,7 @@ export default function Sidebar({ show, setter }) {
                 <div className="flex flex-col">
                     <MenuItem
                         name="RealAssetDAO"
-                        route="/"
+                        route="https://realassetdao.com/"
                     />
                     <MenuItem
                         name="Reserves"
@@ -65,7 +65,7 @@ export default function Sidebar({ show, setter }) {
                     />
                     <MenuItem
                         name="Twitter"
-                        route="/"
+                        route="https://twitter.com/RealExDAO"
                     />
                     <MenuItem
                         name="YouTube"
