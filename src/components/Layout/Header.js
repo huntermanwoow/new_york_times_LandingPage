@@ -1,6 +1,7 @@
 // @/components/Layout/index.js
 import React, { useState } from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 import { FiMenu as Icon } from 'react-icons/fi';
 
 import logo from '@/assets/imgs/logo.png';
@@ -22,20 +23,24 @@ export default function Header({ setter }) {
                         <Icon />
                     </button>
                 </div>
-                <div className="text-dark-white flex items-center w-100px h-36px">
-                    <span>
-                        <Image src={logo} alt="logo" className='w-36px' />
-                    </span>
-                    <span className="text-[18px] font-[Outfit] text-dark-white pl-[6px]"><a href="/">1913$</a></span>
+                <div className="text-dark-white h-36px">
+                    <Link className="flex items-center" href="/">
+                        <span>
+                            <Image src={logo} alt="logo" className='w-36px' />
+                        </span>
+                        <span className="hidden md:block text-[18px] font-[Outfit] text-dark-white pl-[6px]">1913$</span>
+                    </Link>
                 </div>
-                <div className="rounded-48px flex font-[Outfit] bg-white px-3 py-2 items-center justify-center text-dark-green font-bold w-147px h-35px">
-                    <div>
-                        <Image src={vectorImage} alt="sub-logo"/>
+                <Link href="https://1913.app/" target="_blank">
+                    <div className="rounded-48px flex font-[Outfit] bg-white px-3 py-2 items-center justify-center text-dark-green font-bold h-35px">
+                        <div>
+                            <Image src={vectorImage} alt="sub-logo"/>
+                        </div>
+                        <div className='hidden md:block pl-2'>
+                            Launch App
+                        </div>
                     </div>
-                    <div className='pl-1'>
-                        <a href="https://1913.app/" target="_blank">Launch App</a>
-                    </div>
-                </div>
+                </Link>
             </div>
         </>
     )

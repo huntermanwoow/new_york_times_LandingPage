@@ -1,5 +1,6 @@
 // @/components/Layout/Sidebar.js
 import React, { useState, useEffect } from 'react'
+import Link from 'next/link';
 import { useRouter } from 'next/router'
 
 export default function Sidebar({ show, setter }) {
@@ -16,7 +17,7 @@ export default function Sidebar({ show, setter }) {
         const colorClass = router.pathname === route ? "text-dark-white bg-[#524131]" : "text-[#DABC9ECC] hover:text-dark-white hover:bg-[#524131]";
 
         return (
-            <a
+            <Link
                 href={route}
                 onClick={() => {
                     setter(oldVal => !oldVal);
@@ -25,7 +26,7 @@ export default function Sidebar({ show, setter }) {
                 target='_blank'
             >
                 <div>{name}</div>
-            </a>
+            </Link>
         )
     }
 

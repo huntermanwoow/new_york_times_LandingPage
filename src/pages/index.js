@@ -20,7 +20,7 @@ export default function HomePage() {
 				<div className="max-w-[1376px] m-auto">
 
 					<div className="bg-dark-green p-4 rounded-xl text-center">
-						<div className="md:text-[92.4px] text-[60.4px] font-[400] font-[Chomsky] text-dark-white">The New York Times</div>
+						<div className="md:text-[92.4px] text-[48px] font-[400] font-[Chomsky] text-dark-white">The New York Times</div>
 						<div className="text-[24px] font-[400] font-[Chomsky] text-dark-white">12/24/1913</div>
 					</div>
 					<div className="flex mt-4 flex-wrap justify-center tall:justify-between">
