@@ -5,9 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'tall': { 'raw': '(min-width: 1400px)' }
+      },
       colors: {
         'dark-green': '#3D2F22',
-        'dark-white': '#EBE3D0'
+        'dark-white': '#EBE3D0',
       },
       width: (() => {
         const sizes = [36, 100, 147, 751, 593];
@@ -26,7 +29,7 @@ module.exports = {
         return heightConfig;
       })(),
       backgroundImage: {
-        'newspaper': "url('/newspaper.Jpeg')",
+        'newspaper': "url('/newspaper.jpg')",
       },
       borderRadius: {
         '48px': '48px'

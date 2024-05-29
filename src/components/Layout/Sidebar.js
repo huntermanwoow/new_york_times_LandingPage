@@ -3,24 +3,18 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { SlHome } from 'react-icons/sl'
-import { BsInfoSquare, BsEnvelopeAt } from 'react-icons/bs'
-import { FaTshirt, FaRedhat } from 'react-icons/fa'
-
-import logo from '@/assets/imgs/logo.svg'
-
 export default function Sidebar({ show, setter }) {
     const router = useRouter();
 
     // Define our base class
-    const className = "bg-black w-[250px] transition-[margin-left] ease-in-out duration-500 fixed md:static top-0 bottom-0 left-0 z-40";
+    const className = "bg-dark-green w-[250px] md:w-[327px] md:rounded-[20px] md:h-[553px] transition-[margin-left] ease-in-out duration-500 p-4 fixed sattic md:relative top-0 bottom-0 left-0 z-40";
     // Append class based on state of sidebar visiblity
     const appendClass = show ? " ml-0" : " ml-[-250px] md:ml-0";
 
     // Clickable menu items
     const MenuItem = ({ icon, name, route }) => {
         // Highlight menu item based on currently displayed route
-        const colorClass = router.pathname === route ? "text-white" : "text-white/50 hover:text-white";
+        const colorClass = router.pathname === route ? "text-dark-white bg-[#524131]" : "text-[#DABC9ECC] hover:text-dark-white hover:bg-[#524131]";
 
         return (
             <Link
@@ -28,7 +22,7 @@ export default function Sidebar({ show, setter }) {
                 onClick={() => {
                     setter(oldVal => !oldVal);
                 }}
-                className={`flex gap-1 [&>*]:my-auto text-md px-2 py-3 border-b-[1px] border-b-white/10 ${colorClass}`}
+                className={`flex gap-[10px] rounded-[12px] [&>*]:my-auto text-md px-4 py-[7px] font-[Inter] text-[600] text-[22px] text-[#DABC9ECC] hover:text-dark-white hover:bg-[#524131]`}
             >
                 <div>{name}</div>
             </Link>
@@ -50,52 +44,48 @@ export default function Sidebar({ show, setter }) {
             <div className={`${className}${appendClass}`}>
                 <div className="flex flex-col">
                     <MenuItem
-                        name="Menu"
+                        name="RealAssetDAO"
                         route="/"
                     />
                     <MenuItem
-                        name="RealAssetDAO"
-                        route="/RealAssetDAO"
-                    />
-                    <MenuItem
                         name="Reserves"
-                        route="/Reserves"
+                        route="/"
                     />
                     <MenuItem
                         name="Yield Bearing Schedule"
-                        route="/Yield Bearing Schedule"
+                        route="/"
                     />
                     <MenuItem
                         name="$1913 Price History"
-                        route="/$1913 Price History"
+                        route="/"
                     />
                     <MenuItem
                         name="Yield Bearing Schedule"
-                        route="/Yield Bearing Schedule"
+                        route="/"
                     />
                     <MenuItem
                         name="Twitter"
-                        route="/Twitter"
+                        route="/"
                     />
                     <MenuItem
                         name="YouTube"
-                        route="/YouTube"
+                        route="/"
                     />
                     <MenuItem
                         name="TikTok"
-                        route="/TikTok"
+                        route="/"
                     />
                     <MenuItem
                         name="Geoblocking"
-                        route="/Geoblocking"
+                        route="/"
                     />
                     <MenuItem
                         name="Learning"
-                        route="/Learning"
+                        route="/"
                     />
                     <MenuItem
                         name="MMMOG"
-                        route="/MMMOG"
+                        route="/"
                     />
                 </div>
             </div>

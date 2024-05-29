@@ -26,12 +26,6 @@ export default function MenuBarMobile({ setter }) {
                     height={50}
                 />
             </Link>
-            {/* <Link
-                className="text-3xl flex text-white"
-                href="/login"
-            >
-                <FaUser />
-            </Link> */}
         </nav>
     )
 }
