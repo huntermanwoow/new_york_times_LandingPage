@@ -8,6 +8,7 @@ import logo from '@/assets/imgs/logo.png';
 import vectorImage from '@/assets/imgs/vector.png';
 
 
+
 export default function Header({ setter }) {
 
     return (
@@ -42,6 +43,7 @@ export default function Header({ setter }) {
                     </div>
                 </Link>
             </div>
+            
         </>
     )
 }

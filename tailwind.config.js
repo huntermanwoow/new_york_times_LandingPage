@@ -29,7 +29,7 @@ module.exports = {
         return heightConfig;
       })(),
       backgroundImage: {
-        'newspaper': "url('/newspaper.jpg')",
+        'newspaper': "url('/newspaper1.jpg')",
       },
       borderRadius: {
         '48px': '48px'

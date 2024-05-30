@@ -14,8 +14,8 @@ export default function Layout({ pageTitle, children, setShowMenu }) {
             <div className="min-h-screen">
                 <Header setter={setShowMenu} />
                 <div className="flex">
-                    <div className='flex flex-col flex-grow w-screen md:w-full'>
-                        <div className="flex flex-col overflow-auto flex-grow w-screen md:w-full h-[calc(100vh-68px)] relative">
+                    <div className='w-screen md:w-full'>
+                        <div className="flex flex-col overflow-auto flex-grow w-screen md:w-full h-[calc(100vh-68px)]">
                             {children}
                         </div>
                     </div>
