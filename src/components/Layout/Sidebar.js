@@ -7,7 +7,7 @@ export default function Sidebar({ show, setter }) {
     const router = useRouter();
 
     // Define our base class
-    const className = "bg-dark-green w-[250px] md:w-[327px] md:rounded-[20px] md:h-[553px] transition-[margin-left] ease-in-out duration-500 p-4 fixed sattic md:relative top-0 bottom-0 left-0 z-40";
+    const className = "bg-dark-green w-[250px] md:w-[327px] md:rounded-[20px] md:h-[553px] transition-[margin-left] ease-in-out duration-500 p-4 fixed sattic md:relative top-0 bottom-0 left-0 z-50 md:z-30";
     // Append class based on state of sidebar visiblity
     const appendClass = show ? " ml-0" : " ml-[-250px] md:ml-0";
 
@@ -33,7 +33,7 @@ export default function Sidebar({ show, setter }) {
     // Overlay to prevent clicks in background, also serves as our close button
     const ModalOverlay = () => (
         <div
-            className={`flex md:hidden fixed top-0 right-0 bottom-0 left-0 bg-black/50 z-30`}
+            className={`flex md:hidden fixed top-0 right-0 bottom-0 left-0 bg-black/50 z-40`}
             onClick={() => {
                 setter(oldVal => !oldVal);
             }}

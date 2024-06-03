@@ -18,7 +18,7 @@ export default function HomePage() {
 			setShowMenu={setShowMenu}
 		>
 			<div>
-				<div className="sticky top-0 z-50 w-full">
+				<div className="sticky top-0 z-30 md:z-40 w-full">
 					<span className="fixed left-[8px] md:left-8 text-[24px] md:text-[48px] font-[400] font-[Chomsky] text-dark-white">12/24/1913</span>
 					<Image className="w-full" src={headerImage} alt="header-img" />
 				</div>
@@ -30,22 +30,22 @@ export default function HomePage() {
 							<div className="text-[24px] font-[400] font-[Chomsky] text-dark-white">12/24/1913</div>
 						</div> */}
 						<div className="flex flex-wrap justify-center tall:justify-between">
-							<div className="flex flex-grow justify-around tall:justify-between border-b pb-[20px] border-b-[#6d543d] border-b-[2px] tall:border-none">
+							<div className="flex flex-grow flex-wrap justify-around tall:justify-between border-b pb-[20px] border-b-[#6d543d] border-b-[2px] tall:border-none">
 								<Sidebar show={showMenu} setter={setShowMenu} />
-								<div className='bg-[#6d543d] md:w-[2px] hidden md:block'></div>
-								<div>
-									<Image className="rounded-[20px] border-[#473728] border-[4.89px]" src={ArticleImage} alt='Article Image' />
+								<div className='bg-[#6d543d] md:w-[2px] hidden large:block'></div>
+								<div className="w-full min-w-[350px] md:w-[612px] mt-4 large:mt-0">
+									<div>
+										<iframe className="w-full h-[320px] md:h-[384px] rounded-[20px]" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowFullscreen></iframe>
+									</div>
+									<div className="flex mt-4 justify-between">
+										<PriceCard icon={ChartIcon.src} price={'$31.55'} description={'Guranteed floor price'} />
+										<PriceCard icon={CommandIcon.src} price={'$31332.55'} description={'Reserved money'} />
+									</div>
 								</div>
 							</div>
 							<div className='bg-[#6d543d] w-[2px] h-[553px] ml-2 hidden tall:block'></div>
-							<div className="w-full md:w-[612px] h mt-4 tall:ml-2 tall:mt-0">
-								<div className='w-'>
-									<iframe className="w-full h-[320px] md:h-[384px] rounded-[20px]" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
-								</div>
-								<div className="flex mt-4 justify-between">
-									<PriceCard icon={ChartIcon.src} price={'$31.55'} description={'Guranteed floor price'} />
-									<PriceCard icon={CommandIcon.src} price={'$31332.55'} description={'Reserved money'} />
-								</div>
+							<div className="mt-4 tall:ml-2 tall:mt-0">
+								<Image className="rounded-[20px] border-[#473728] border-[4.89px]" src={ArticleImage} alt='Article Image' />
 							</div>
 						</div>
 						<div className="md:mt-20 mt-12 rounded-3xl bg-[#FFFFFF60] md:p-2">
