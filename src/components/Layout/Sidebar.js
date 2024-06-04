@@ -86,7 +86,7 @@ export default function Sidebar({ show, setter }) {
                     />
                     <MenuItem
                         name="MMMOG"
-                        route="/"
+                        route="https://m0n0p0ly.com/"
                     />
                 </div>
             </div>
