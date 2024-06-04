@@ -61,10 +61,6 @@ export default function Sidebar({ show, setter }) {
                         route="/"
                     />
                     <MenuItem
-                        name="Yield Bearing Schedule"
-                        route="/"
-                    />
-                    <MenuItem
                         name="Twitter"
                         route="https://twitter.com/RealExDAO"
                     />
