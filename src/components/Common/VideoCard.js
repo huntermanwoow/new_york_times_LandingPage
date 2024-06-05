@@ -7,7 +7,7 @@ export default function VideoCard () {
     return (
         <>
             <div>
-                <iframe className="w-full h-[320px] md:h-[384px] rounded-[20px]" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowFullscreen></iframe>
+                <iframe className="w-full h-[320px] md:h-[384px] rounded-[20px]" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowFullScreen></iframe>
             </div>
             <div className="flex mt-4 justify-between">
                 <PriceCard icon={ChartIcon.src} price={'$31.55'} description={'Guranteed floor price'} />

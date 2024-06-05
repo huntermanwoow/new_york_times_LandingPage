@@ -8,6 +8,7 @@ import ArticleImage from '@/assets/imgs/article.jpg';
 import DateImage from '@/assets/imgs/present-date.jpg';
 import headerImage from '@/assets/imgs/1.jpg';
 import VideoCard from '@/components/Common/VideoCard';
+import Article from '@/components/Common/Article';
 
 export default function HomePage () {
 
@@ -44,31 +45,8 @@ export default function HomePage () {
 								<Image className="rounded-[20px] border-[#473728] border-[4.89px]" src={ArticleImage} alt='Article Image' />
 							</div>
 						</div>
-						<div className="md:mt-20 mt-12 rounded-3xl bg-[#FFFFFF60] md:p-2">
-							<div className="text-center md:text-[92.4px] text-[60.4px] font-[400] font-[Chomsky] text-[#2C231A]">
-								Heading
-							</div>
-							<div className="text-center md:mt-0 md:text-[26px] font-[400] font-[Chomsky] text-[#2C231A]">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime nam rerum non possimus vel placeat debitis enim, similique iusto illo accusamus eos obcaecati voluptatibus aliquam alias nostrum ex perferendis.
-							</div>
+						<div className="md:mt-20 mt-12 rounded-3xl bg-[#FFFFFF90] p-2 md:p-8">
+							<Article />
 						</div>
 					</div>
 				</div>
