@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 
-export default function Sidebar({ show, setter }) {
+export default function Sidebar({ show, setter, reservesSectionRef, yieldSectionRef, pricingSectionRef, scrollToSection }) {
     const router = useRouter();
 
     // Define our base class
@@ -12,22 +12,35 @@ export default function Sidebar({ show, setter }) {
     const appendClass = show ? " ml-0" : " ml-[-250px] md:ml-0";
 
     // Clickable menu items
-    const MenuItem = ({ icon, name, route }) => {
+    const MenuItem = ({ icon, name, route, scrollTo }) => {
         // Highlight menu item based on currently displayed route
         const colorClass = router.pathname === route ? "text-dark-white bg-[#524131]" : "text-[#DABC9ECC] hover:text-dark-white hover:bg-[#524131]";
 
-        return (
-            <Link
-                href={route}
-                onClick={() => {
-                    setter(oldVal => !oldVal);
-                }}
-                className={`flex gap-[10px] rounded-[12px] [&>*]:my-auto text-md px-4 py-[7px] font-[Inter] text-[600] text-[22px] text-[#DABC9ECC] hover:text-dark-white hover:bg-[#524131]`}
-                target='_blank'
-            >
-                <div>{name}</div>
-            </Link>
-        )
+        if (route)
+            return (
+                <Link
+                    href={route}
+                    onClick={() => {
+                        setter(oldVal => !oldVal);
+                    }}
+                    className={`transition duration-300 ease-in-out flex gap-[10px] rounded-[12px] [&>*]:my-auto text-md px-4 py-[7px] font-[Inter] text-[600] text-[22px] text-[#DABC9ECC] hover:text-dark-white hover:bg-[#524131]`}
+                    target="_blank"
+                >
+                    <div onClick={() => scrollToSection(reservesSectionRef)}>{name}</div>
+                </Link>
+            )
+        else
+            return (
+                <div
+                    onClick={() => {
+                        setter(oldVal => !oldVal);
+                        scrollTo()
+                    }}
+                    className={`hover:cursor-pointer transition duration-300 ease-in-out flex gap-[10px] rounded-[12px] [&>*]:my-auto text-md px-4 py-[7px] font-[Inter] text-[600] text-[22px] text-[#DABC9ECC] hover:text-dark-white hover:bg-[#524131]`}
+                >
+                    {name}
+                </div>
+            )
     }
 
     // Overlay to prevent clicks in background, also serves as our close button
@@ -50,19 +63,19 @@ export default function Sidebar({ show, setter }) {
                     />
                     <MenuItem
                         name="Reserves"
-                        route="/"
+                        scrollTo={() => scrollToSection(reservesSectionRef)}
                     />
                     <MenuItem
                         name="Yield Bearing Schedule"
-                        route="/"
+                        scrollTo={() => scrollToSection(yieldSectionRef)}
                     />
                     <MenuItem
                         name="$1913 Price History"
-                        route="/"
+                        scrollTo={() => scrollToSection(pricingSectionRef)}
                     />
                     <MenuItem
                         name="Twitter"
-                        route="https://twitter.com/RealExDAO"
+                        route="https://x.com/RealAssetDAO"
                     />
                     <MenuItem
                         name="YouTube"
@@ -78,7 +91,8 @@ export default function Sidebar({ show, setter }) {
                     />
                     <MenuItem
                         name="Learning"
-                        route="/"
+                        route="https://realassetss-organization.gitbook.io/crypto-research/"
+                        target="_"
                     />
                     <MenuItem
                         name="MMMOG"

@@ -1,9 +1,11 @@
 // @/components/Layout/index.js
-import React, { useState } from 'react'
+import React, { useRef } from 'react'
 import Head from 'next/head'
 import Header from './Header';
+import ScrollUpButton from '../Common/ScrollUpButton';
 
 export default function Layout({ pageTitle, children, setShowMenu }) {
+    const contentRef = useRef(null);
 
     return (
         <>
@@ -15,9 +17,10 @@ export default function Layout({ pageTitle, children, setShowMenu }) {
                 <Header setter={setShowMenu} />
                 <div className="flex">
                     <div className='w-screen md:w-full'>
-                        <div className="flex flex-col overflow-auto flex-grow w-screen md:w-full h-[calc(100vh-68px)]">
+                        <div ref={contentRef} className="flex flex-col overflow-auto flex-grow w-screen md:w-full h-[calc(100vh-68px)]">
                             {children}
                         </div>
+                        <ScrollUpButton contentRef={contentRef} />
                     </div>
                 </div>
             </div>
