@@ -15,7 +15,7 @@ export default function YieldBearingArticle() {
             Because this is so new we are offering a generous payout schedule to help push adoption. Yield is going to be airdropped directly to wallets holding 1913$ based on the untouched status of those tokens in said wallets. We will also be rewarding hodlers with our RAD governance tokens further down the road for even just buying 1913$ but more for those that hold on, time is your friend.
           </p>
           <div className="mb-6">
-            <p className="mb-6">Here is our yield schedule for buying 1913$ before the end of year 2024. Get in and you are locked in for as long as you hold them. Sell them and you only get rewarded for the time held.</p>
+            <p className="mb-6">Here is our yield schedule for buying 1913$ before the end of year 2024. Get in and you are locked in for that years schedule (not to exceed 365 days). Sell them and you only get rewarded for the time held.</p>
             <p className="text-center mb-6">Yield Bearing Schedule:</p>
             <ul className="mb-6 list-disc pl-8">
               <li>1% for each and every month (30 days)</li>
