@@ -9,7 +9,7 @@ export default function YieldBearingArticle() {
         </div>
         <div className="md:mt-0 md:text-[20px] font-[600] font-[Inter] text-[#2C231A]">
           <p className="mb-6">
-            Let's face it, all investments ignore inflation when looking at rates of returns. This makes our 1913$ even more profitable to hold on too. If inflation on the year is 5% then that's on top of the yield bearing payout schedule laid out below.
+            Let&apos;s face it, all investments ignore inflation when looking at rates of returns. This makes our 1913$ even more profitable to hold on too. If inflation on the year is 5% then that&apos;s on top of the yield bearing payout schedule laid out below.
           </p>
           <p className="mb-6">
             Because this is so new we are offering a generous payout schedule to help push adoption. Yield is going to be airdropped directly to wallets holding 1913$ based on the untouched status of those tokens in said wallets. We will also be rewarding hodlers with our RAD governance tokens further down the road for even just buying 1913$ but more for those that hold on, time is your friend.

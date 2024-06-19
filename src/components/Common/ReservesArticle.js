@@ -9,7 +9,7 @@ export default function ReservesArticle() {
                     1913.money | 1913.app | 1913$ Token
                 </div>
                 <div className="md:mt-0 md:text-[20px] font-[600] font-[Inter] text-[#2C231A]">
-                    <p className="mb-6"><Link className="text-blue-600" href="https://1913.money">1913.money</Link> is our home but we have a few other places that reside within the ecosystem. We are committed to the tokenization and transparency of our reserves. We will be posting our reserves here for all to see. Anyone, Anytime, Anywhere will be able to audit our reserves so that they can make their own informed decisions about the stability of our stable coin and the validity of it's pricing.</p>
+                    <p className="mb-6"><Link className="text-blue-600" href="https://1913.money">1913.money</Link> is our home but we have a few other places that reside within the ecosystem. We are committed to the tokenization and transparency of our reserves. We will be posting our reserves here for all to see. Anyone, Anytime, Anywhere will be able to audit our reserves so that they can make their own informed decisions about the stability of our stable coin and the validity of it&apos;s pricing.</p>
 
                     <p className="mb-6">Some of our wallet addresses may not be integrated at the moment, but as our reserves grow they will get deposited. Here is where our reserves will reside:</p>
                     <ul className="mb-6 list-disc pl-8">
