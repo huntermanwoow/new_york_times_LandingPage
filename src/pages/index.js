@@ -12,12 +12,14 @@ import Article from '@/components/Common/Article';
 import ReservesArticle from '@/components/Common/ReservesArticle';
 import PricingHistoryArticle from '@/components/Common/PricingHistoryArticle';
 import YieldBearingArticle from '@/components/Common/YieldBearingArticle';
+import GeoblockingArticle from '@/components/Common/GeoblockingArticle';
 
 export default function HomePage () {
 
 	const reservesSectionRef = useRef(null);
 	const yieldSectionRef = useRef(null);
   	const pricingSectionRef = useRef(null);
+  	const geoblockingSectionRef = useRef(null);
 
 	const [showMenu, setShowMenu] = useState(false);
 	const [content, setContent] = useState('youtube');
@@ -55,6 +57,7 @@ export default function HomePage () {
 									reservesSectionRef={reservesSectionRef}
 									yieldSectionRef={yieldSectionRef}
 									pricingSectionRef={pricingSectionRef}
+									geoblockingSectionRef={geoblockingSectionRef}
 								/>
 								<div className='bg-[#6d543d] md:w-[2px] hidden large:block'></div>
 								<div className="w-full min-w-[350px] md:w-[612px] mt-4 large:mt-0">
@@ -75,6 +78,9 @@ export default function HomePage () {
 							</div>
 							<div ref={pricingSectionRef} className="scroll-mt-[4rem] md:scroll-mt-[6rem] tall:scroll-mt-[8.5rem]">
 								<PricingHistoryArticle />
+							</div>
+							<div ref={geoblockingSectionRef} className="scroll-mt-[4rem] md:scroll-mt-[6rem] tall:scroll-mt-[8.5rem]">
+								<GeoblockingArticle />
 							</div>
 							
 						</div>

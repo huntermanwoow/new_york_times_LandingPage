@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 
-export default function Sidebar({ show, setter, reservesSectionRef, yieldSectionRef, pricingSectionRef, scrollToSection }) {
+export default function Sidebar({ show, setter, reservesSectionRef, yieldSectionRef, pricingSectionRef, geoblockingSectionRef, scrollToSection }) {
     const router = useRouter();
 
     // Define our base class
@@ -79,7 +79,7 @@ export default function Sidebar({ show, setter, reservesSectionRef, yieldSection
                     />
                     <MenuItem
                         name="YouTube"
-                        route="/"
+                        route="https://www.youtube.com/@RAD1913"
                     />
                     <MenuItem
                         name="TikTok"
@@ -87,7 +87,7 @@ export default function Sidebar({ show, setter, reservesSectionRef, yieldSection
                     />
                     <MenuItem
                         name="Geoblocking"
-                        route="/"
+                        scrollTo={() => scrollToSection(geoblockingSectionRef)}
                     />
                     <MenuItem
                         name="Learning"
