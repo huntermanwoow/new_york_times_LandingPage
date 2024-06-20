@@ -83,7 +83,7 @@ export default function Sidebar({ show, setter, reservesSectionRef, yieldSection
                     />
                     <MenuItem
                         name="TikTok"
-                        route="/"
+                        route="https://www.tiktok.com/@realassetdao"
                     />
                     <MenuItem
                         name="Geoblocking"
@@ -95,7 +95,7 @@ export default function Sidebar({ show, setter, reservesSectionRef, yieldSection
                         target="_"
                     />
                     <MenuItem
-                        name="MMMOG"
+                        name="M0n0p0ly.com"
                         route="https://m0n0p0ly.com/"
                     />
                 </div>
