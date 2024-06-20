@@ -29,14 +29,14 @@ export default function GeoblockingArticle() {
             <li>Canada</li>
           </ul>
           <p className="mb-6">
-            Please call your country's securities agency, and political leaders to help pave the way to change.
+            Please call your country&apos;s securities agency, and political leaders to help pave the way to change.
           </p>
           <div>
             <p className="mb-6">
               The legal mumbo-jumbo:
             </p>
             <p className="mb-6">
-              You must ensure that you are not a resident of Prohibited Countries. Currently, we do not provide Services, nor do we accept registration of Users or trade applications, in the following countries: North Korea, Cuba, Sudan, Syria, Iran, Crimea, Mainland China, Indonesia, Singapore, Venezuela, the United States, and Canada (altogether referred to as 'Prohibited Countries'). For the sake of clarification, the Prohibited Countries list is non-exclusive and is subject to change, at any time and from time to time, we in our absolute sole discretion may decide, taking into account legal and compliance considerations. You understand and acknowledge that if it is determined that you have given false representations of your location or place of residence, we reserve the right to take any appropriate actions in compliance with applicable laws and regulations, including termination of any Account immediately and liquidating any open positions.
+              You must ensure that you are not a resident of Prohibited Countries. Currently, we do not provide Services, nor do we accept registration of Users or trade applications, in the following countries: North Korea, Cuba, Sudan, Syria, Iran, Crimea, Mainland China, Indonesia, Singapore, Venezuela, the United States, and Canada (altogether referred to as &apos;Prohibited Countries&apos;). For the sake of clarification, the Prohibited Countries list is non-exclusive and is subject to change, at any time and from time to time, we in our absolute sole discretion may decide, taking into account legal and compliance considerations. You understand and acknowledge that if it is determined that you have given false representations of your location or place of residence, we reserve the right to take any appropriate actions in compliance with applicable laws and regulations, including termination of any Account immediately and liquidating any open positions.
             </p>
           </div>
         </div>
