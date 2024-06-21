@@ -26,7 +26,7 @@ export default function Sidebar({ show, setter, reservesSectionRef, yieldSection
                     className={`transition duration-300 ease-in-out flex gap-[10px] rounded-[12px] [&>*]:my-auto text-md px-4 py-[7px] font-[Inter] text-[600] text-[22px] text-[#DABC9ECC] hover:text-dark-white hover:bg-[#524131]`}
                     target="_blank"
                 >
-                    <div onClick={() => scrollToSection(reservesSectionRef)}>{name}</div>
+                    {name}
                 </Link>
             )
         else
@@ -92,7 +92,6 @@ export default function Sidebar({ show, setter, reservesSectionRef, yieldSection
                     <MenuItem
                         name="Learning"
                         route="https://realassetss-organization.gitbook.io/crypto-research/"
-                        target="_"
                     />
                     <MenuItem
                         name="MMMOG"
